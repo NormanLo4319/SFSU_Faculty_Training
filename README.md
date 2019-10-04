@@ -1,2 +1,2 @@
 # SFSU_Faculty_Training
-Using Python, R, and Stata for statistical analysis
+Demo for the use of Python, R, and Stata for statistical analysis
