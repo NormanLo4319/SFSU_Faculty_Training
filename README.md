@@ -1,7 +1,7 @@
 # Economic Faculty Training
 
 ## Objective:
-Introduce Python to Economics Department for developing statistical analysis courses.
+Review different programming languages (R and Python) for developing statistical analysis courses.  Using different examples to demonstrate the use of R and Python.  Examples are used to demonstrate hypothesis testing, data visualization, descriptive statistic, and simple regression modeling.
 
 ## Installation Instruction:
 Basic use of R and Python in Anaconda Environment
