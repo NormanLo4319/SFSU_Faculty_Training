@@ -1,4 +1,9 @@
-# SFSU_Faculty_Training
+# Economic Faculty Training
+
+## Objective:
+Introduce Python to Economics Department for developing statistical analysis courses.
+
+## Installation Instruction:
 Basic use of R and Python in Anaconda Environment
 
 First install R and R-Studio in your machine if you haven't done so.
