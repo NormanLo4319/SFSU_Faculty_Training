@@ -4,12 +4,12 @@
 
 * For the purpose of this presentation, we focus on some basic descriptive
 * statistic command and some common regression model technique. All examples are
-* based on the data sets stored in the data directory.
+* based on the datasets stored in the data directory.
 
 clear all
 set more off
 
-* Importing the Boston data set for linear regression analysis.
+* Importing the Boston dataset for linear regression analysis.
 * For Stata 12 or before,
 * insheet using data\Boston.csv
 * For Stata 13 or after,
@@ -69,7 +69,7 @@ summarize medv if crim > 5
 
 * You can force Stata to take a subset of observations that fulfills multiple
 * options at the same time (logical AND). The following command returns the 
-* summary of median value of home given crim >5 and the house's tract bounds
+* summary of median value of home given crim > 5 and the house's tract bounds
 * the Charles River:
 
 summarize medv if crim > 5 & chas == 1
@@ -140,7 +140,7 @@ sc medv crim, msize(small) ///
 * Checking the correlation between variables
 corr
 
-* Estimate the predicted effect of the per capita crime rate on the median 
+* Estimate the predicted effect of per capita crime rate on the median 
 * home value in Boston:
 regress medv crim
 
@@ -167,11 +167,11 @@ name(dv_yhat, replace)
 
 
 ** Multiple Linear Regression **
-* Estimate the predicted effect of the per capita crim, lower status of the 
-* population, and Charles River dummy on the median home value in Boston:
+* Estimate the predicted effect of the per capita crime rate, lower status 
+* of the population, and Charles River dummy on median home value in Boston:
 regress medv crim lstat chas
 
-* Robust Test
+* Robust Test:
 * Ramsey RESET test
 ovtest
 * Breusch-Pagan / Cook-Weisberg test for heteroskedasticity
@@ -181,13 +181,13 @@ vif
 
 
 ** Logistic Regression Model **
-* Import the data set Default for the logistic regression analysis.
+* Import the dataset Default for the logistic regression analysis.
 * For Stata 12 or before,
 * insheet using data\Boston.csv
 * For Stata 13 or after,
 import delimited using data\Default.csv
 
-* Discriptive summary of the data set
+* Descriptive summary of the dataset
 summarize 
 
 * Note that the column Default and Student cannot be summarized by the
@@ -208,7 +208,7 @@ gen student3 = 0
 replace student3 = 1 if student == "Yes"
 
 * Estimate the log odds of Default using the average balance that the
-* customer has remaning on their credit card after making their monthly
+* customer has remaining on their credit card after making their monthly
 * payment.
 logit default3 balance
 
