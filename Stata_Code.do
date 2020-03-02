@@ -81,13 +81,16 @@ summarize medv if crim > 5 & chas == 1
 summarize medv if crim > 5 | chas == 1
 
 
+** GRAPHING CORRELATION AMONG VARIABLES IN THE DATASET (Matrix Graph)
+graph matrix medv crim chas lstat age rad
+
 ** GRAPHING QUANTITATIVE DATA (HISTOGRAM) -- Histograms are very useful for
 * quantitative information because break the entire range of values into
 * individual bins and show the frequencies with which observations fall into the
 * different bins.
 
 * Our dataset has a variable "medv" which represents the median home's value.
-* Creating a histogram for it easy:
+* Creating a histogram for it is easy:
 histogram medv
 
 
@@ -104,7 +107,7 @@ histogram medv, frequency
 * multiple categories, with indications for the center, central 50% of
 * observations, and outliers.
 
-* Our dataset identifies whether a home is located in by the river or not "chas"
+* Our dataset identifies whether a home is located nearby the river or not "chas"
 * We can use a boxplot to compare nearby or none nearby river home value:
 graph box medv, over(chas)
 
@@ -114,7 +117,7 @@ graph box medv, over(chas)
 * variables in respect to each other.
 
 * Our data contains variables on median home value and per capita crime rate.
-* A scatter plot for these two variables is easily created with
+* A scatter plot for these two variables is easily created with:
 graph twoway scatter medv crim, title("Median Home Value v Per Capita Crime Rate")
 
 * Especially when you have lots of observations, relatively thick dots for each
