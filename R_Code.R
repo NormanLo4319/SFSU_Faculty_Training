@@ -19,7 +19,7 @@ library(pROC)
 library(generalhoslem)
 
 # Setting the working directory for the project.
-setwd("C:/Users/lokma/Desktop/SFSU_Training/SFSU_Faculty_Training")
+setwd("C:/Users/..../SFSU_Faculty_Training") # To your current directory
 
 # Importing the Boston data set for linear regression analysis.
 boston <- read.csv("data/Boston.csv", header=TRUE, na.string="?")
