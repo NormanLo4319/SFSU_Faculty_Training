@@ -11,9 +11,9 @@ set more off
 
 * Importing the Boston dataset for linear regression analysis.
 * For Stata 12 or before,
-* insheet using data\Boston.csv
+insheet using data\Boston.csv
 * For Stata 13 or after,
-import delimited using data\Boston.csv
+* import delimited using data\Boston.csv
 
 * USING ONE OR MORE VARIABLES
 * Most commands can be applied to one or more variables. To apply the command
@@ -180,12 +180,16 @@ hettest
 vif
 
 
+
+clear all
+set more off
+
 ** Logistic Regression Model **
 * Import the dataset Default for the logistic regression analysis.
 * For Stata 12 or before,
-* insheet using data\Boston.csv
+insheet using data\Default.csv
 * For Stata 13 or after,
-import delimited using data\Default.csv
+* import delimited using data\Default.csv
 
 * Descriptive summary of the dataset
 summarize 
@@ -216,16 +220,22 @@ logit default3 balance
 logit default3 balance income student3
 
 * Robust Test
-* Ramsey RESET test
-ovtest
-* Breusch-Pagan / Cook-Weisberg test for heteroskedasticity
-hettest
+* Ramsey RESET test (Not available for logistic regression)
+* Needs to be hard coded
+predict xbhat, xb
+gen xbhatsq = xbhat*xbhat
+gen xbhatcu = xbhatsq*xbhat
+logit default3 balance income student3 xbhatsq xbhatcu
+test xbhatsq xbhatcu
+* Breusch-Pagan / Cook-Weisberg test for heteroskedasticity (Not available for logistic regression)
+
 * Variance Inflation Factor test for multicollinearity
-vif
+logit default3 balance income student3
+vif, uncentered
 * Evaluate the area under the ROC curve 
 lroc
 * Calculate Hosmer-Lemeshow goodness-of-fit statistic
 estat gof
 
-* Confusion Matrix (Pr > 0.5)
+* Confusion Matrix & Classification Report (Default: Pr > 0.5)
 estat classification
