@@ -1,7 +1,7 @@
 # Economics Department Faculty Training
 
 ## Objective:
-Review different programming languages (Stata, R, and Python) for developing statistical analysis courses. Given the data sets, we are going to demonstrate hypothesis testing, data visualization, descriptive statistic, simple linear regression model, and logistic regression model with different statistical packages.
+Review different programming languages (Stata, R, and Python) for developing statistics and econometrics courses. Given the data sets, we are going to demonstrate hypothesis testing, data visualization, descriptive statistic, simple linear regression model, and logistic regression model with different statistical packages.
 
 ## Installation Instruction:
 Basic use of R and Python in Anaconda Environment
