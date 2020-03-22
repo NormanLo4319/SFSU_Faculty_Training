@@ -30,8 +30,9 @@ R-Markdown (R-Demo) <http://rpubs.com/lokmannorman/USF_Summar>
 * [Pandas Library Resource](https://pandas.pydata.org/pandas-docs/stable)
 * [Numpy Library Resource](https://www.numpy.org/devdocs/user/quickstart.html)
 * [Scipy Library Resource](https://scipy-lectures.org)
-* [Plotly Library Resource](https://plot.ly/python)
 * [MatPlotLib Library Resource](https://matplotlib.org/users/pyplot_tutorial.html)
+* [StatsModel Library Resource](https://www.statsmodels.org/stable/index.html)
+* [Scikit Learn Library Resource](https://scikit-learn.org/stable/)
 
 #### R:
 * [R-CookBook](http://www.cookbook-r.com)
