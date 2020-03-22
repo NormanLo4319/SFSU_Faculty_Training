@@ -37,6 +37,7 @@ R-Markdown (R-Demo) <http://rpubs.com/lokmannorman/USF_Summar>
 #### R:
 * [R-CookBook](http://www.cookbook-r.com)
 * [ggplot Library Resource](http://r-statistics.co/Complete-Ggplot2-Tutorial-Part1-With-R-Code.html)
+* [dplyr Library Resource](https://www.rdocumentation.org/packages/dplyr/versions/0.7.8)
 
 #### Overall Programming Related:
 * [Stack Overflow](https://stackoverflow.com)
