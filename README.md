@@ -43,3 +43,5 @@ R-Markdown (R-Demo) <http://rpubs.com/lokmannorman/USF_Summar>
 * [Stack Overflow](https://stackoverflow.com)
 * [Github](https://github.com)
 * Google Search
+
+Copyright © 2020 Norman Lo
