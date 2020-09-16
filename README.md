@@ -4,9 +4,7 @@
 Review different programming languages (Stata, R, and Python) for building the statistics and econometrics courses. Given the data sets, this lab demonstrates the use of hypothesis testing, data visualization, descriptive statistic, simple linear regression model, and logistic regression model with different statistical packages.
 
 ## Installation Instruction:
-Basic use of R and Python in Anaconda Environment
-
-First install R and R-Studio in your machine if you haven't done so.
+Basic use of R in R studio and Python in Anaconda Environment
 
 Installing R (choose the appropriate OS system),
 <https://cran.cnr.berkeley.edu/>
