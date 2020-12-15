@@ -12,7 +12,7 @@ Installing R (choose the appropriate OS system),
 Installing R-Studio (choose the appropriate OS system),
 <https://www.rstudio.com/products/rstudio/download/#download>
 
-After finish installing the above packages, then install Anaconda.
+After finish installing the above packages, then install Anaconda (it may take a while to install the package).
 
 For installing Anaconda on Window,
 <https://docs.anaconda.com/anaconda/install/windows/>
